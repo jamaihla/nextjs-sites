@@ -21,6 +21,15 @@ module.exports = {
         'lime': '#AAAB5F',
         'lightblack': '#333333'
       },
+      backgroundImage: theme => ({
+        'fruits': "url('/pennyjuice/fruits.jpg')",
+        'drinks': "url('/pennyjuice/drinks-line.jpg')",
+        'drinks-screen': "url('/pennyjuice/drinks-line-screen.jpg')",
+        'drinks-xs': "url('/pennyjuice/drinks-line-xs.jpg')",
+        'drinks-sm': "url('/pennyjuice/drinks-line-sm.jpg')",
+        'drinks-md': "url('/pennyjuice/drinks-line-md.jpg')",
+        'drinks-lg': "url('/pennyjuice/drinks-line-lg.jpg')"
+      }),
       padding: {
         '1.75': '.4375rem',
         '5.5': '1.35rem',

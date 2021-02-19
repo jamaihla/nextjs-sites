@@ -1,6 +1,6 @@
-import Link from 'next/Link'
-import LogoHeader from './LogoHeader'
-// import Image from 'next/image'
+import Link from 'next/link'
+import Image from 'next/image'
+// import LogoHeader from './LogoHeader'
 
 export default function Nav() {
     return (
@@ -10,9 +10,13 @@ export default function Nav() {
                 <button type="button" className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" id="main-menu" aria-haspopup="true">
                     <span className="sr-only">Open main menu</span>
                     {/*  Heroicon name: menu */}
-                    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                    <Link href="#" onclick="openSlideMenu()">
+                        <a>
+                            <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </a>
+                    </Link>
                 </button>
             </div>
             <ul className="hidden lg:w-1/3 xl:w-auto lg:flex">
@@ -37,9 +41,27 @@ export default function Nav() {
                 </Link> 
                 </li>
             </ul>
+
             <div className="w-1/3 xl:w-auto flex justify-center">
-                    {/* <img className="lg:w-48 2xl:w-64" src="/pennyjuice/logo.svg" alt="Penny Juice" />*/}
-                    <LogoHeader></LogoHeader>
+                    <Link href="/pennyjuice">
+                        <a>
+                        <Image 
+                            src="/pennyjuice/logo.svg"
+                            alt="Penny Juice"
+                            width={256}
+                            height={56}
+                        />
+                        </a>
+                    </Link>
+                    {/* <img className="lg:w-48 2xl:w-64" src="/pennyjuice/logo.svg" alt="Penny Juice" />
+                    <Image
+                        src="/pennyjuice/logo.svg"
+                        alt="Penny Juice"
+                        width={256}
+                        height={56}
+                        quality={100}
+                    />
+                    */}
             </div>
             <div className="flex justify-around lg:justify-between items-center">
                     <p className="hidden sm:hidden md:block font-main font-bold sm:text-xs 2xl:text-base text-cherry">FREE NATIONWIDE <br /> SHIPPING</p>
