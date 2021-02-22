@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Nav from './Nav'
-import Main from './Main'
 
 export default function Header() {
     return (

@@ -63,9 +63,16 @@ export default function Home() {
         </a>
       </footer>
   </div> */}
-  <Link href="/pennyjuice">
-    <a className="text-green-600 font-bold">Penny Juice</a>
-  </Link>
+  <div>
+    <Link href="/pennyjuice">
+      <a className="text-green-600 font-bold">Penny Juice</a>
+    </Link>
+  </div>
+  <div>
+    <Link href="/mgdb">
+      <a className="text-green-600 font-bold">MGDB Parts</a>
+    </Link>
+  </div>
   </>
   )
 }
