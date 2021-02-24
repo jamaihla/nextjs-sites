@@ -29,7 +29,7 @@ export default function ProductCategories() {
             </div>
             {/*<!--Category Grid-->*/}
             <div className="grid grid-cols-cards gap-2 lg:grid-cols-3">
-                <div className={[styles.gridCard, "lg:py-8 lg:px-6 flex flex-col row-span-2 lg:row-auto lg:flex-row"].join(' ')}>
+                <div className={[styles.gridCard, "flex flex-col row-span-2 lg:row-auto lg:flex-row"].join(' ')}>
                     <div className="w-full text-center lg:text-left lg:w-1/2">
                         <h1 className="font-roboto font-bold text-base sm:text-3xl lg:text-3xl 2xl:text-5xl text-darkblue leading-4">Engine Oils</h1>
                     </div>

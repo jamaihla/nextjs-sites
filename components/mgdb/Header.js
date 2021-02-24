@@ -17,7 +17,9 @@ export default function Header() {
             <button type="button" className="text-darkblue focus:text-gray-300 hover:text-gray-300 focus-outline-none"><svg className="h-6 w-6 fill-current" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 256"><rect y="213.33" width="384" height="42.67"/><rect y="106.67" width="384" height="42.67"/><rect width="384" height="42.67"/></svg></button>
         </div>
         <div className="lg:w-1/4 xl:w-auto">
-            <img className="h-12" src="./mgdb/MGDB.svg" alt="MGDB logo" />
+            <Link href="/mgdb">
+                <a><img className="h-12" src="/mgdb/MGDB.svg" alt="MGDB logo" /></a>
+            </Link>
         </div>
         <div className="flex lg:w-3/4 xl:w-full xl:justify-end justify-between items-center">
             <Nav />

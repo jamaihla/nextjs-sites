@@ -1,3 +1,4 @@
+
 .signin {
     @apply font-roboto font-medium rounded-md hover:bg-darkblue bg-brightorange uppercase text-xs xl:text-base xl:mx-10 px-3 xl:px-8 py-2 text-white;
 }
@@ -15,13 +16,17 @@
 }
 
 .gridCard {
-    @apply bg-white rounded-md py-5 px-4 shadow-sm
+    @apply bg-white rounded-md py-5 lg:py-8 px-4 shadow-sm lg:px-6
 }
 
 .subscribe {
-    @apply bg-white rounded-lg pt-12 pb-20 px-5 mb-5 shadow-lg
+    @apply bg-white rounded-lg pt-12 pb-20 px-5 mb-5 shadow-lg lg:px-20
 }
 
 .subscriptionForm {
     @apply font-roboto border rounded-md p-1 my-2 border-bluegray;
+}
+
+.navLinks li{
+    @apply font-roboto font-medium text-base pb-3;
 }
