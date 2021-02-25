@@ -1,13 +1,13 @@
 import Header from '../../components/mgdb/Header'
-import GuidesContent from '../../components/mgdb/GuidesContent'
+import GalleryContent from '../../components/mgdb/GalleryContent'
 import SubscriptionForm from '../../components/mgdb/SubscriptionForm'
 import Footer from '../../components/mgdb/Footer'
 
-export default function Guides () {
+export default function Gallery () {
     return(
         <>
         <Header />
-        <GuidesContent />
+        <GalleryContent />
         <SubscriptionForm />
         <Footer />
         </>
