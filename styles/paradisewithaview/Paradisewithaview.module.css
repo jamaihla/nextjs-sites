@@ -1,0 +1,7 @@
+.card {
+    @apply bg-white w-full mb-8 rounded-3xl shadow-lg pb-10 desktop:mx-5;
+}
+
+.inputField {
+    @apply font-sofia border-b p-1 my-2 border-lightblack placeholder-lightblack desktop:text-sm;
+}

@@ -63,16 +63,26 @@ export default function Home() {
         </a>
       </footer>
   </div> */}
-  <div>
-    <Link href="/pennyjuice">
-      <a className="text-green-600 font-bold">Penny Juice</a>
-    </Link>
+  <div className="p-20">
+    <h1 className="font-main py-5 text-4xl font-bold">Jamaihl Amoroso's Portfolio</h1>
+    <h3 className="font-main py-10 text-2xl font-bold">NextJS Sites</h3>
+    <div>
+      <Link href="/pennyjuice">
+        <a className="text-green-600 font-bold">Penny Juice</a>
+      </Link>
+    </div>
+    <div>
+      <Link href="/mgdb">
+        <a className="text-green-600 font-bold">MGDB Parts</a>
+      </Link>
+    </div>
+    <div>
+      <Link href="/paradisewithaview">
+        <a className="text-green-600 font-bold">Paradise with a View</a>
+      </Link>
+    </div>
   </div>
-  <div>
-    <Link href="/mgdb">
-      <a className="text-green-600 font-bold">MGDB Parts</a>
-    </Link>
-  </div>
+  
   </>
   )
 }

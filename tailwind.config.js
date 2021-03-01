@@ -3,10 +3,17 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        'mobile': '375px',
+        'tablet': '768px',
+        'desktop': '1280px',
+        '2xl': '1536px'
+      },
       fontFamily: {
         'main': 'Open Sans',
         'raleway': 'Raleway',
-        'roboto': 'Roboto'
+        'roboto': 'Roboto',
+        'sofia': 'sofia-pro'
       },
       fontSize: {
         '3.5xl': '2rem',
@@ -19,14 +26,18 @@ module.exports = {
       colors: {
         'cherry': '#F15853',
         'darkgreen': '#899A76',
+        'darkseagreen': '#7DA394',
         'lightcherry': '#F8EEEC',
         'lime': '#AAAB5F',
         'lightblack': '#333333',
+        'lightersalmon': '#fff5f0',
+        'redviolet': '#BC6173',
         'darkblue': '#1F3075',
         'brightorange': '#ec5e04',
         'bluegray': '#88B3C6',
         'lightgray': '#f5f5f5',
-        'offwhite': '#fafafa'
+        'offwhite': '#fafafa',
+        'whitish': '#FCFCFC',
       },
       backgroundImage: theme => ({
         'fruits': "url('/pennyjuice/fruits.jpg')",
@@ -37,18 +48,24 @@ module.exports = {
         'drinks-md': "url('/pennyjuice/drinks-line-md.jpg')",
         'drinks-lg': "url('/pennyjuice/drinks-line-lg.jpg')",
         'main': "url('/mgdb/bg-main.svg')",
-        'main-lg': "url('/mgdb/bg-main-lg.svg')"
+        'main-lg': "url('/mgdb/bg-main-lg.svg')",
+        'beachfront': "url('/paradisewithaview/beachfront.jpg')",
       }),
       padding: {
         '1.75': '.4375rem',
         '5.5': '1.35rem',
         '6.5': '1.575rem'
       },
+      width: {
+        '35': '8.6875rem',
+        '74': '18.5rem'
+      },
       height: {
+        '49': '12.3125rem',
         'mobile': '50.75rem',
         'desktop': '48rem',
         'wide': '64rem',
-        'widescreen': '67.5rem'
+        'widescreen': '67.5rem',
       },
       gridTemplateColumns: {
         'cards': '50% minmax(144px, 1fr)'
