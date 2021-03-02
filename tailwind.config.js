@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'mobile': '375px',
+        'mobiles': '375px',
         'tablet': '768px',
         'desktop': '1280px',
-        '2xl': '1536px'
+        'xxl': '1536px'
       },
       fontFamily: {
         'main': 'Open Sans',

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/Link'
+import Nav from '../../components/paradisewithaview/Nav'
 
 const Header = () => {
     return (
@@ -18,35 +19,7 @@ const Header = () => {
                     <Link href="/paradisewithaview">
                         <a><img src="/paradisewithaview/paradise-logo.svg" alt="paradise logo" /></a>
                     </Link>
-                    <nav className="hidden desktop:block">
-                        <ul>
-                            <li className="inline-block font-sofia font-medium text-2xl px-2 desktop:text-base 2xl:text-2xl">
-                                <Link href="/paradisewithaview/find-a-hotel">
-                                    <a>Find A Hotel</a>
-                                </Link>
-                            </li>
-                            <li className="inline-block font-sofia font-medium text-2xl px-2 desktop:text-base 2xl:text-2xl">
-                                <Link href="/paradisewithaview/amenities">
-                                    <a>Amenities</a>
-                                </Link>
-                            </li>
-                            <li className="inline-block font-sofia font-medium text-2xl px-2 desktop:text-base 2xl:text-2xl">
-                                <Link href="/paradisewithaview/gallery">
-                                    <a>Gallery</a>
-                                </Link>
-                            </li>
-                            <li className="inline-block font-sofia font-medium text-2xl px-2 desktop:text-base 2xl:text-2xl">
-                                <Link href="/paradisewithaview/housing">
-                                    <a>Housing</a>
-                                </Link>
-                            </li>
-                            <li className="inline-block font-sofia font-medium text-2xl px-2 desktop:text-base 2xl:text-2xl">
-                                <Link href="/paradisewithaview/events">
-                                    <a>Events</a>
-                                </Link>
-                            </li>
-                        </ul>
-                    </nav>
+                    <Nav />
                     <button className="hidden tablet:flex py-2 px-5 bg-redviolet text-white rounded-md justify-between items-center">
                         <img className="pr-2 align-middle" src="/paradisewithaview/book.svg" alt="book icon" />
                         <span className="font-sofia text-xl align-middle">Bookings</span>

@@ -3,6 +3,7 @@ import Main from "../../components/paradisewithaview/Main"
 import ImageGrid from '../../components/paradisewithaview/ImageGrid'
 import HotelRooms from '../../components/paradisewithaview/HotelRooms'
 import Rooms from '../../components/paradisewithaview/Rooms'
+import Facilities from '../../components/paradisewithaview/Facilities'
 
 export default function Paradise() {
     return (
@@ -12,6 +13,7 @@ export default function Paradise() {
                 <ImageGrid />
                 <HotelRooms />
                 <Rooms />
+                <Facilities />
             </Layout>
         </>
     )
