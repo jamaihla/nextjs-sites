@@ -6,7 +6,7 @@ export default function Layout({children}) {
         <>
         <div className="bg-beachfront tablet:bg-none">
             <Header />
-                {children}
+            {children}
         </div>
         <Footer />
         </>

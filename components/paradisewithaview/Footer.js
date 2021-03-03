@@ -1,10 +1,11 @@
+import Link from 'next/link'
 
 const Footer = () => {
     return (
         <>
         <footer className="bg-lightersalmon mx-auto px-9 py-7 tablet:px-20 tablet:py-9">
             <div className="pt-10 desktop:flex desktop:justify-between">
-                <div className="2xl:w-52">
+                <div className="xxl:w-52">
                     <img className="pb-6" src="paradisewithaview/paradise-logo.svg" alt="" />
                     <h3 className="font-sofia text-lightblack text-xl font-semibold">Paradise with a view</h3>
                     <p className="font-sofia text-lightblack tablet:text-base">Distinctive Vacation Rentals and
@@ -12,11 +13,31 @@ const Footer = () => {
                 </div>
                 <nav className="py-8 desktop:py-0">
                     <ul>
-                        <li className="py-1 block font-sofia text-lightblack text-sm font-medium"><a href="#">Find a Hotel</a></li>
-                        <li className="py-1 block font-sofia text-lightblack text-sm font-medium"><a href="#">Amenities</a></li>
-                        <li className="py-1 block font-sofia text-lightblack text-sm font-medium"><a href="#">Gallery</a></li>
-                        <li className="py-1 block font-sofia text-lightblack text-sm font-medium"><a href="#">Housing</a></li>
-                        <li className="py-1 block font-sofia text-lightblack text-sm font-medium"><a href="#">Events</a></li>
+                        <li className="py-1 block font-sofia text-lightblack text-sm font-medium">
+                            <Link href="/paradisewithaview/find-a-hotel">
+                                <a>Find a Hotel</a>
+                            </Link>
+                        </li>
+                        <li className="py-1 block font-sofia text-lightblack text-sm font-medium">
+                            <Link href="/paradisewithaview/amenities">
+                                <a>Amenities</a>
+                            </Link>
+                        </li>
+                        <li className="py-1 block font-sofia text-lightblack text-sm font-medium">
+                            <Link href="/paradisewithaview/gallery">
+                                <a>Gallery</a>
+                            </Link>
+                        </li>
+                        <li className="py-1 block font-sofia text-lightblack text-sm font-medium">
+                            <Link href="/paradisewithaview/housing">
+                                <a>Housing</a>
+                            </Link>
+                        </li>
+                        <li className="py-1 block font-sofia text-lightblack text-sm font-medium">
+                            <Link href="/paradisewithaview/events">
+                                <a>Events</a>
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
                 <div className="pb-5">
@@ -35,11 +56,31 @@ const Footer = () => {
                     </address>
                     <div className="pt-12">
                         <ul className="desktop:flex desktop:justify-between">
-                            <li className="inline-block align-middle"><a href="#"><img src="/paradisewithaview/facebook.svg" alt="facebook" /></a></li>
-                            <li className="inline-block align-middle"><a href="#"><img src="/paradisewithaview/instagram.svg" alt="instagram" /></a></li>
-                            <li className="inline-block align-middle"><a href="#"><img src="/paradisewithaview/twitter.svg" alt="twitter" /></a></li>
-                            <li className="inline-block align-middle pt-1"><a href="#"><img src="/paradisewithaview/youtube.svg" alt="youtube" /></a></li>
-                            <li className="inline-block align-middle"><a href="#"><img src="/paradisewithaview/pinterest.svg" alt="pinterest" /></a></li>
+                            <li className="inline-block align-middle">
+                                <Link href="#">
+                                    <a><img src="/paradisewithaview/facebook.svg" alt="facebook" /></a>
+                                </Link>
+                            </li>
+                            <li className="inline-block align-middle">
+                                <Link href="#">
+                                    <a><img src="/paradisewithaview/instagram.svg" alt="instagram" /></a>
+                                </Link>
+                            </li>
+                            <li className="inline-block align-middle">
+                                <Link href="#">
+                                    <a><img src="/paradisewithaview/twitter.svg" alt="twitter" /></a>
+                                </Link>
+                            </li>
+                            <li className="inline-block align-middle pt-1">
+                                <Link href="#">
+                                    <a><img src="/paradisewithaview/youtube.svg" alt="youtube" /></a>
+                                </Link>
+                            </li>
+                            <li className="inline-block align-middle">
+                                <Link href="#">
+                                    <a><img src="/paradisewithaview/pinterest.svg" alt="pinterest" /></a>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

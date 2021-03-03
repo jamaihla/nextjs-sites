@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Facilities () {
     return (
         <>
@@ -38,7 +40,7 @@ export default function Facilities () {
                     </div>
                 </div>
                 <div className="hidden tablet:block">
-                    <img className="rounded-3xl" src="paradisewithaview/poolside.jpg" alt="poolside" />
+                    <Image className="rounded-3xl" src="/paradisewithaview/poolside.jpg" width={810} height={1013} alt="poolside" />
                 </div>
             </div>
         </div>

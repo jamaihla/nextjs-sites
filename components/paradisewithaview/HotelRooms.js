@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function HotelRooms () {
     return (
         <>
@@ -20,7 +22,7 @@ export default function HotelRooms () {
                     </button>
                 </div>
                 <div className="mb-5">
-                    <img src="paradisewithaview/royalgarden.jpg" alt="" />
+                    <Image src="/paradisewithaview/royalgarden.jpg" width={1900} height={1426} alt=""  />
                 </div>
                 
                 <div className="flex justify-center items-center desktop:hidden">
@@ -53,7 +55,7 @@ export default function HotelRooms () {
                     
                 </div>
                 <div className="mb-5">
-                    <img src="paradisewithaview/pacificmonarch.jpg" alt="" />
+                    <Image src="/paradisewithaview/pacificmonarch.jpg" width={2176} height={1450} alt="" />
                 </div>
                 <div className="flex justify-center items-center desktop:hidden">
                     <button className="bg-redviolet w-1/2 tablet:w-1/3 flex justify-center text-offwhite px-2 py-3 items-center rounded-md font-sofia">

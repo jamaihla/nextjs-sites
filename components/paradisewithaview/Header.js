@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/Link'
+import Link from 'next/link'
 import Nav from '../../components/paradisewithaview/Nav'
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
                         <a><img src="/paradisewithaview/paradise-logo.svg" alt="paradise logo" /></a>
                     </Link>
                     <Nav />
-                    <button className="hidden tablet:flex py-2 px-5 bg-redviolet text-white rounded-md justify-between items-center">
+                    <button className="hidden tablet:flex py-2 px-5 bg-redviolet text-white rounded-md justify-between items-center hover:bg-darkseagreen">
                         <img className="pr-2 align-middle" src="/paradisewithaview/book.svg" alt="book icon" />
                         <span className="font-sofia text-xl align-middle">Bookings</span>
                     </button>
