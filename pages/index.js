@@ -81,6 +81,11 @@ export default function Home() {
         <a className="text-green-600 font-bold">Paradise with a View</a>
       </Link>
     </div>
+    <div>
+      <Link href="/gatesnfences">
+        <a className="text-green-600 font-bold">Gates N Fences</a>
+      </Link>
+    </div>
   </div>
   
   </>

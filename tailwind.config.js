@@ -31,6 +31,7 @@ module.exports = {
         'lime': '#AAAB5F',
         'lightblack': '#333333',
         'lightersalmon': '#fff5f0',
+        'lightyellow': '#fffef0',
         'redviolet': '#BC6173',
         'darkblue': '#1F3075',
         'brightorange': '#ec5e04',
@@ -38,6 +39,11 @@ module.exports = {
         'lightgray': '#f5f5f5',
         'offwhite': '#fafafa',
         'whitish': '#FCFCFC',
+        'zomp': '#459988',
+        'sushi': '#99AA3A',
+        'fallgreen': '#DBE6B1',
+        'alto': '#dedede',
+        'silverchalice': '#aaaaaa'
       },
       backgroundImage: theme => ({
         'fruits': "url('/pennyjuice/fruits.jpg')",
@@ -50,6 +56,9 @@ module.exports = {
         'main': "url('/mgdb/bg-main.svg')",
         'main-lg': "url('/mgdb/bg-main-lg.svg')",
         'beachfront': "url('/paradisewithaview/beachfront.jpg')",
+        // Gates N Fences
+        'welder-xs': "url('/gatesnfences/main-bg-mobile.jpg')",
+        'main-gate-xs': "url(/gatesnfences/category-bg-mobile.jpg)"
       }),
       padding: {
         '1.75': '.4375rem',
