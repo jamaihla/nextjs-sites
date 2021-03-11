@@ -8,21 +8,14 @@ export default function HeightCategories() {
     const heightCat = (a) => {
         let h = parseInt(a);
 
-        const height = {
-            dwarf: 'dwarf',
-            average: 'average',
-            tall: 'tall',
-            abnormal: 'giant'
-        }
-
         if(h <= 147) {
-            setResult('The person is a ' + height.dwarf  + '.');
+            setResult('The person is a dwarf.');
         } else if (h <= 163) {
-            setResult('The person\'s height is ' + height.average  + '.');
+            setResult('The person\'s height is average.');
         } else if (h < 213) {
-            setResult('The person is ' + height.tall + '.');
+            setResult('The person is tall.');
         } else {
-            setResult('The person is a '+ height.abnormal + '.');
+            setResult('The person is abnormal.');
         }
     } 
 
