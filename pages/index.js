@@ -86,6 +86,11 @@ export default function Home() {
         <a className="text-green-600 font-bold">Gates N Fences</a>
       </Link>
     </div>
+    <div>
+    <Link href="/javascript-programs">
+      <a className="text-green-600 font-bold">JavaScript Exercises</a>
+    </Link>
+  </div>
   </div>
   
   </>

@@ -58,12 +58,14 @@ module.exports = {
         'beachfront': "url('/paradisewithaview/beachfront.jpg')",
         // Gates N Fences
         'welder-xs': "url('/gatesnfences/main-bg-mobile.jpg')",
-        'main-gate-xs': "url(/gatesnfences/category-bg-mobile.jpg)"
+        'main-gate-xs': "url(/gatesnfences/category-bg-mobile.jpg)",
+        'footer-bg': "url(/gatesnfences/footer-bg.jpg)"
       }),
       padding: {
         '1.75': '.4375rem',
         '5.5': '1.35rem',
-        '6.5': '1.575rem'
+        '6.5': '1.575rem',
+        '35': '8.375rem'
       },
       width: {
         '35': '8.6875rem',
