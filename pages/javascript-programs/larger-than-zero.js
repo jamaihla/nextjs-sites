@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Footer from "../../components/javascript-programs/Footer"
 import styles from "../../styles/javascript.module.scss";
 
 export default function LargerThanZero() {
@@ -23,15 +24,16 @@ export default function LargerThanZero() {
         <div className={styles.js}>
             <div>
                 <h1>Larger or less than zero</h1>
-                <div className="flex">
+                <div className={styles.inputField}>
                 <label>Value of integer m:</label>
                 <input type="number" placeholder="0" onChange={(e) => valueOfN(e.target.value)} />
                 </div>
 
-                <div className="">
+                <div className={styles.result}>
                 <label>{result}</label>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

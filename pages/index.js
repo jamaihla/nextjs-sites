@@ -90,7 +90,12 @@ export default function Home() {
     <Link href="/javascript-programs">
       <a className="text-green-600 font-bold">JavaScript Exercises</a>
     </Link>
-  </div>
+    </div>
+    <div>
+    <Link href="/forloopcomponent">
+      <a className="text-green-600 font-bold">For Loop Problem Solutions</a>
+    </Link>
+    </div>
   </div>
   
   </>

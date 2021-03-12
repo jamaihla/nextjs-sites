@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Footer from "../../components/javascript-programs/Footer"
 import styles from "../../styles/javascript.module.scss";
 
 export default function ThreeNumbers() {
@@ -31,17 +32,17 @@ export default function ThreeNumbers() {
         <div className={styles.js}>
         <div>
             <h1>Largest Number</h1>
-            <div className="flex">
+            <div className={styles.inputField}>
             <label>First number:</label>
             <input type="number" placeholder="0" onChange={(e) => setNum1(e.target.value)} />
             </div>
 
-            <div className="flex">
+            <div className={styles.inputField}>
             <label>Second number:</label>
             <input type="number" placeholder="0" onChange={(e) => setNum2(e.target.value)} />
             </div>
 
-            <div className="flex">
+            <div className={styles.inputField}>
             <label>Third number:</label>
             <input type="number" placeholder="0" onChange={(e) => setNum3(e.target.value)} />
             </div>
@@ -49,10 +50,11 @@ export default function ThreeNumbers() {
             <div className="flex">
             <button className={styles.button} onClick={() => threeNumbers(num1, num2, num3)}>Check</button>
             </div>
-            <div>
+            <div className={styles.result}>
             <label> {result}</label>
             </div>
         </div>
+        <Footer />
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "../../components/javascript-programs/Footer"
 import styles from "../../styles/javascript.module.scss";
 
 export default function EqualNumbers() {
@@ -20,11 +21,11 @@ export default function EqualNumbers() {
     <div className={styles.js}>
       <div>
       <h1>Equal numbers</h1>
-      <div className="flex">
+      <div className={styles.inputField}>
         <label>First Value</label>
         <input type="number" placeholder="0" onChange={(e) => setX(e.target.value)} />
       </div>
-      <div className="flex">
+      <div className={styles.inputField}>
         <label>Second Value</label>
         <input
           id="x"
@@ -38,11 +39,12 @@ export default function EqualNumbers() {
         <div>
           <button className={styles.button} onClick={() => equalNumbers(x, y)}>Check</button>
         </div>
-        <div>
+        <div className={styles.result}>
           <label>{result}</label>
         </div>
       </div>
     </div>
+    <Footer />
     </div>
   );
 }

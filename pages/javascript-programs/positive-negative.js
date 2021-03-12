@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "../../components/javascript-programs/Footer"
 import styles from "../../styles/javascript.module.scss";
 
 export default function PositiveNegative(){
@@ -20,17 +21,18 @@ export default function PositiveNegative(){
 
     return(
         <div className={styles.js}>
-      <div>
-        <h1>Positive or Negative?</h1>
-        <div className="flex">
-          <label>Enter number</label>
-          <input type="number" placeholder="0" onChange={(e) => positiveNegative(e.target.value)} />
-        </div>
+          <div>
+            <h1>Positive or Negative?</h1>
+            <div className={styles.inputField}>
+              <label>Enter number</label>
+              <input type="number" placeholder="0" onChange={(e) => positiveNegative(e.target.value)} />
+            </div>
 
-        <div className="flex">
-          <label> {result}</label>
-        </div>
+            <div className={styles.result}>
+              <label> {result}</label>
+            </div>
+          </div>
+          <Footer />
       </div>
-    </div>
     )
 }

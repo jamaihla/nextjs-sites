@@ -6,8 +6,8 @@ export default function Footer() {
         <>
             <nav className={styles.nav}>
                 <li>
-                    <Link href="/javascript-programs">
-                        <a>Back to exercises</a>
+                    <Link href="/forloopcomponent">
+                        <a>Back to list</a>
                     </Link>
                 </li>
             </nav>

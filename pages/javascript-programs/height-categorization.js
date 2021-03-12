@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Footer from "../../components/javascript-programs/Footer"
 import styles from "../../styles/javascript.module.scss";
 
 export default function HeightCategories() {
@@ -15,7 +16,7 @@ export default function HeightCategories() {
         } else if (h < 213) {
             setResult('The person is tall.');
         } else {
-            setResult('The person is abnormal.');
+            setResult('The person has an abnormal height.');
         }
     } 
 
@@ -23,15 +24,16 @@ export default function HeightCategories() {
         <div className={styles.js}>
         <div>
             <h1>Height Categorization (Philippines)</h1>
-            <div className="flex">
+            <div className={styles.inputField}>
             <label>Height (in cm)</label>
             <input type="number" placeholder="0" onChange={(e) => heightCat(e.target.value)} />
             </div>
 
-            <div className="flex">
+            <div className={styles.result}>
             <label> {result}</label>
             </div>
         </div>
+        <Footer />
         </div>
     )
 }

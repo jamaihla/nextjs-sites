@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "../../components/javascript-programs/Footer"
 import styles from "../../styles/javascript.module.scss";
 
 export default function EvenOdd() {
@@ -20,14 +21,15 @@ export default function EvenOdd() {
     <div className={styles.js}>
       <div>
         <h1>Even or Odd</h1>
-        <div className="flex">
+        <div className={styles.inputField}>
           <label>Enter number</label>
           <input type="number" placeholder="0" onChange={(e) => evenOdd(e.target.value)}></input>
         </div>
-        <div className="flex">
+        <div className={styles.result}>
           <label>{result}</label>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Footer from "../../components/javascript-programs/Footer"
 import styles from "../../styles/javascript.module.scss";
 
 export default function Temperature() {
@@ -38,14 +39,15 @@ export default function Temperature() {
         <div className={styles.js}>
         <div>
             <h1>Temperature Checker</h1>
-            <div className="flex">
+            <div className={styles.inputField}>
             <label>Temperature (in centigrade):</label>
             <input type="number" placeholder="0" onChange={(e) => tempCheck(e.target.value)} />
             </div>
-            <div className="flex">
+            <div className={styles.result}>
             <label>{result}</label>
             </div>
         </div>
+        <Footer />
         </div>
     )
 }
